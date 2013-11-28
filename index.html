@@ -9,11 +9,18 @@
 </head>
 <body ng-controller="dpscheckeryonCtrl">
 
+<h1>title</h1>
 
 <div class="row">
     <div class="col-md-4">
         <form>
-            <select class="form-control" ng-model="weapon" ng-options="w.name for w in Weapons" ng-change="weaponChange">
+            <select class="form-control" ng-model="weapon" ng-options="w.name for w in Weapons">
+                <option></option>
+            </select>
+        </form>
+
+        <form>
+            <select class="form-control" ng-model="head" ng-options="h.name for h in Heads">
                 <option></option>
             </select>
         </form>
@@ -25,9 +32,9 @@
                 <th>名前</th>
                 <th>STR</th>
                 <th>VIT</th>
-                <th>Accuracy</th>
-                <th>Crit</th>
-                <th>意志</th>
+                <th>命中</th>
+                <th>クリ</th>
+                <th>意思</th>
                 <th>SS</th>
                 <th>物理基本</th>
                 <th>物理AA</th>
@@ -46,6 +53,19 @@
                 <td>{{ weapon.aadam }}</td>
                 <td>{{ weapon.aadel }}</td>
                 <td>{{ ( weapon.aadam / weapon.pyhd) * 100 }}</td>
+            </tr>
+            <tr>
+                <td>{{ head.name }}</td>
+                <td>{{ head.str }}</td>
+                <td>{{ head.vit }}</td>
+                <td>{{ head.acc }}</td>
+                <td>{{ head.crit }}</td>
+                <td>{{ head.det }}</td>
+                <td>{{ head.ssp }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </div>

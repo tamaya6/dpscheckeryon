@@ -8,11 +8,7 @@ var dpscheckeryon = angular.module('dpscheckeryon', {
 });
 
 dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
-    $scope.Weapons = data;
+    $scope.Weapons = weaponData;
+    $scope.Heads = headData;
 
-    $scope.weaponSelctData = null;
-    $scope.weaponChange = function () {
-        $scope.weaponSelctData = [];
-        $scope.weaponSelctData.push($scope.weapon.name);
-    };
 });
