@@ -12,5 +12,7 @@ dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
     $scope.Heads = headData;
     $scope.Bodys = bodyData;
     $scope.Hands = handData;
+    $scope.Waists = waistData;
+    $scope.Legs = legData;
 
 });

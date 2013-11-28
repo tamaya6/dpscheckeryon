@@ -250,3 +250,96 @@ var handData =
         str: 8, vit: 8, acc: 0, crit: 11, det: 5, ssp: 0
     }
 ];
+
+var waistData =
+[
+    {
+        name: "ヒーローベルト・オブ・ストライク",
+        type: 4,
+        str: 13, vit: 15, acc: 11, crit: 0, det: 0, ssp: 16
+    },
+    {
+        name: "アラガンストライカータセット",
+        type: 4,
+        str: 13, vit: 15, acc: 0, crit: 16, det: 8, ssp: 0
+    },
+    {
+        name: "ダークライト・ウィップベルト",
+        type: 4,
+        str: 9, vit: 10, acc: 12, crit: 0, det: 6, ssp: 0
+    },
+    {
+        name: "ヒッポグリフボイジャーベルトHQ＋",
+        type: 4,
+        str: 9, vit: 10, acc: 9, crit: 12, det: 0, ssp: 0
+    },
+    {
+        name: "ヒッポグリフボイジャーベルトHQ",
+        type: 4,
+        str: 9, vit: 10, acc: 9, crit: 12, det: 0, ssp: 0
+    },
+    {
+        name: "ヒッポグリフボイジャーベルト",
+        type: 4,
+        str: 8, vit: 8, acc: 7, crit: 10, det: 0, ssp: 0
+    },
+    {
+        name: "ペルタストベルト",
+        type: 4,
+        str: 8, vit: 8, acc: 0, crit: 0, det: 5, ssp: 11
+    },
+    {
+        name: "ブラインドメイデンサッシュ",
+        type: 4,
+        str: 7, vit: 7, acc: 11, crit: 8, det: 0, ssp: 0
+    }
+];
+
+var legData =
+[
+    {
+        name: "メレーガスキン",
+        type: 5,
+        str: 29, vit: 33, acc: 34, crit: 0, det: 17, ssp: 0
+    },
+    {
+        name: "アラガンストライカートラウザー",
+        type: 5,
+        str: 29, vit: 33, acc: 0, crit: 34, det: 0, ssp: 24
+    },
+    {
+        name: "ダークライトサブリガ",
+        type: 5,
+        str: 20, vit: 22, acc: 27, crit: 0, det: 0, ssp: 19
+    },
+    {
+        name: "ヒッポグリフトラウザーHQ",
+        type: 5,
+        str: 20, vit: 22, acc: 0, crit: 27, det: 13, ssp: 0
+    },
+    {
+        name: "ヒッポグリフトラウザー",
+        type: 5,
+        str: 18, vit: 18, acc: 0, crit: 21, det: 10, ssp: 0
+    },
+    {
+        name: "ペルタストブリーチ",
+        type: 5,
+        str: 16, vit: 18, acc: 0, crit: 24, det: 0, ssp: 17
+    },
+    {
+        name: "シパーヒサルエル",
+        type: 5,
+        str: 14, vit: 15, acc: 23, crit: 0, det: 11, ssp: 0
+    },
+    {
+        name: "ミリシアサブリガ",
+        type: 5,
+        str: 13, vit: 12, acc: 0, crit: 19, det: 9, ssp: 0
+    },
+    {
+        name: "テンプルガスキン",
+        type: 5,
+        str: 12, vit: 13, acc: 22, crit: 0, det: 10, ssp: 0
+    },
+];
