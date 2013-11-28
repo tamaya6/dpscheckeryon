@@ -152,3 +152,52 @@ var headData =
         str: 8, vit: 8, acc: 10, crit: 14, det: 0, ssp: 0
     }
 ];
+
+var bodyData =
+[
+    {
+        name: "メレーシクラス",
+        type: 2,
+        str: 29, vit: 33, acc: 34, crit: 0, det: 0, ssp: 24
+    },
+    {
+        name: "アラガンストライカーキュイラス",
+        type: 2,
+        str: 29, vit: 33, acc: 24, crit: 34, det: 0, ssp: 0
+    },
+    {
+        name: "ヒッポグリフジャーキンHQ",
+        type: 2,
+        str: 20, vit: 22, acc: 19, crit: 0, det: 0, ssp: 27
+    },
+    {
+        name: "ヒッポグリフジャーキン",
+        type: 2,
+        str: 18, vit: 18, acc: 15, crit: 0, det: 0, ssp: 21
+    },
+    {
+        name: "ダークライト・ストライカーコースリット",
+        type: 2,
+        str: 18, vit: 18, acc: 27, crit: 0, det: 13, ssp: 0
+    },
+    {
+        name: "ペルタストアクトン",
+        type: 2,
+        str: 16, vit: 18, acc: 24, crit: 0, det: 12, ssp: 0
+    },
+    {
+        name: "テンプルシクラス",
+        type: 2,
+        str: 14, vit: 15, acc: 23, crit: 0, det: 0, ssp: 16
+    },
+    {
+        name: "シパーヒシャツ",
+        type: 2,
+        str: 14, vit: 15, acc: 0, crit: 0, det: 11, ssp: 23
+    },
+    {
+        name: "ミリシアハーネス",
+        type: 2,
+        str: 13, vit: 12, acc: 0, crit: 13, det: 12, ssp: 0
+    }
+];

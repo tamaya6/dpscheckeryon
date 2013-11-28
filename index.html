@@ -24,6 +24,12 @@
                 <option></option>
             </select>
         </form>
+
+        <form>
+            <select class="form-control" ng-model="body" ng-options="b.name for b in Bodys">
+                <option></option>
+            </select>
+        </form>
     </div>
 
     <div class="col-md-8">
@@ -62,6 +68,19 @@
                 <td>{{ head.crit }}</td>
                 <td>{{ head.det }}</td>
                 <td>{{ head.ssp }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>{{ body.name }}</td>
+                <td>{{ body.str }}</td>
+                <td>{{ body.vit }}</td>
+                <td>{{ body.acc }}</td>
+                <td>{{ body.crit }}</td>
+                <td>{{ body.det }}</td>
+                <td>{{ body.ssp }}</td>
                 <td></td>
                 <td></td>
                 <td></td>
