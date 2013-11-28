@@ -201,3 +201,52 @@ var bodyData =
         str: 13, vit: 12, acc: 0, crit: 13, det: 12, ssp: 0
     }
 ];
+
+var handData =
+[
+    {
+        name: "メレーグローブ",
+        type: 3,
+        str: 18, vit: 20, acc: 0, crit: 0, det: 15, ssp: 15
+    },
+    {
+        name: "アラガンストライカーガントレット",
+        type: 3,
+        str: 18, vit: 20, acc: 0, crit: 21, det: 11, ssp: 0
+    },
+    {
+        name: "ダークライト・ストライカーブレーサー",
+        type: 3,
+        str: 12, vit: 14, acc: 0, crit: 11, det: 11, ssp: 0
+    },
+    {
+        name: "ヒッポグリフグローブHQ",
+        type: 3,
+        str: 12, vit: 14, acc: 16, crit: 11, det: 0, ssp: 0
+    },
+    {
+        name: "ヒッポグリフグローブ",
+        type: 3,
+        str: 11, vit: 11, acc: 13, crit: 9, det: 0, ssp: 0
+    },
+    {
+        name: "ペルタストミトン",
+        type: 3,
+        str: 10, vit: 11, acc: 11, crit: 0, det: 0, ssp: 15
+    },
+    {
+        name: "シパーヒグローブ",
+        type: 3,
+        str: 9, vit: 9, acc: 0, crit: 0, det: 7, ssp: 14
+    },
+    {
+        name: "テンプルシクラス",
+        type: 3,
+        str: 8, vit: 8, acc: 0, crit: 0, det: 9, ssp: 10
+    },
+    {
+        name: "ミリシアミトンガントレット",
+        type: 3,
+        str: 8, vit: 8, acc: 0, crit: 11, det: 5, ssp: 0
+    }
+];

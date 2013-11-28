@@ -11,5 +11,6 @@ dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
     $scope.Weapons = weaponData;
     $scope.Heads = headData;
     $scope.Bodys = bodyData;
+    $scope.Hands = handData;
 
 });
