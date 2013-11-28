@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="dpscheckeryon">
+<head>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/data.js"></script>
+</head>
+<body ng-controller="dpscheckeryonCtrl">
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <select class="form-control" ng-model="weapon" ng-options="w.name for w in Weapons" ng-change="weaponChange">
+                <option></option>
+            </select>
+        </form>
+    </div>
+
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered table-condensed">
+            <tr>
+                <th>名前</th>
+                <th>STR</th>
+                <th>VIT</th>
+                <th>Accuracy</th>
+                <th>Crit</th>
+                <th>意志</th>
+                <th>SS</th>
+                <th>物理基本</th>
+                <th>物理AA</th>
+                <th>AA間隔</th>
+                <th>AA威力</th>
+            </tr>
+            <tr>
+                <td>{{ weapon.name }}</td>
+                <td>{{ weapon.str }}</td>
+                <td>{{ weapon.vit }}</td>
+                <td>{{ weapon.acc }}</td>
+                <td>{{ weapon.crit }}</td>
+                <td>{{ weapon.det }}</td>
+                <td>{{ weapon.ssp }}</td>
+                <td>{{ weapon.pyhd }}</td>
+                <td>{{ weapon.aadam }}</td>
+                <td>{{ weapon.aadel }}</td>
+                <td>{{ ( weapon.aadam / weapon.pyhd) * 100 }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
