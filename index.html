@@ -50,6 +50,18 @@
                 <option></option>
             </select>
 
+            <select class="form-control" ng-model="item.wrist" ng-options="wr.name for wr in Wrists">
+                <option></option>
+            </select>
+
+            <select class="form-control" ng-model="item.ring1" ng-options="r1.name for r1 in Rings">
+                <option></option>
+            </select>
+
+            <select class="form-control" ng-model="item.ring2" ng-options="r2.name for r2 in Rings">
+                <option></option>
+            </select>
+
         </form>
     </div>
 
@@ -158,7 +170,7 @@
                     <td>{{ item.neck.memo }}</td>
                 </tr>
                 <tr>
-                    <th>足</th>
+                    <th>耳</th>
                     <td>{{ item.ear.name }}</td>
                     <td>{{ item.ear.str }}</td>
                     <td>{{ item.ear.vit }}</td>
@@ -167,6 +179,39 @@
                     <td>{{ item.ear.det }}</td>
                     <td>{{ item.ear.ssp }}</td>
                     <td>{{ item.ear.memo }}</td>
+                </tr>
+                <tr>
+                    <th>腕</th>
+                    <td>{{ item.wrist.name }}</td>
+                    <td>{{ item.wrist.str }}</td>
+                    <td>{{ item.wrist.vit }}</td>
+                    <td>{{ item.wrist.acc }}</td>
+                    <td>{{ item.wrist.crit }}</td>
+                    <td>{{ item.wrist.det }}</td>
+                    <td>{{ item.wrist.ssp }}</td>
+                    <td>{{ item.wrist.memo }}</td>
+                </tr>
+                <tr>
+                    <th>指1</th>
+                    <td>{{ item.ring1.name }}</td>
+                    <td>{{ item.ring1.str }}</td>
+                    <td>{{ item.ring1.vit }}</td>
+                    <td>{{ item.ring1.acc }}</td>
+                    <td>{{ item.ring1.crit }}</td>
+                    <td>{{ item.ring1.det }}</td>
+                    <td>{{ item.ring1.ssp }}</td>
+                    <td>{{ item.ring1.memo }}</td>
+                </tr>
+                <tr>
+                    <th>指2</th>
+                    <td>{{ item.ring2.name }}</td>
+                    <td>{{ item.ring2.str }}</td>
+                    <td>{{ item.ring2.vit }}</td>
+                    <td>{{ item.ring2.acc }}</td>
+                    <td>{{ item.ring2.crit }}</td>
+                    <td>{{ item.ring2.det }}</td>
+                    <td>{{ item.ring2.ssp }}</td>
+                    <td>{{ item.ring2.memo }}</td>
                 </tr>
             </tbody>
 

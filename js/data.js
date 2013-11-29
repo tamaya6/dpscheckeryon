@@ -12,7 +12,7 @@ var weaponData =
         type: 0,
         str: 31, vit: 35, acc: 0, crit: 37, det: 18, ssp: 0,
         pyhd: 46, aadam: 41.70, aadel: 2.72,
-        memo: "バハムート5層ドロップ"
+        memo: "バハムート5層"
     },
     {
         name: "スファライ",
@@ -127,7 +127,7 @@ var headData =
         name: "アラガンストライカーバイザー",
         type: 1,
         str: 18, vit: 20, acc: 0, crit: 15, det: 15, ssp: 0,
-        memo: "バハムート4層ドロップ"
+        memo: "バハムート4層"
     },
     {
         name: "メレーサークレット",
@@ -140,12 +140,6 @@ var headData =
         type: 1,
         str: 12, vit: 14, acc: 16, crit: 0, det: 0, ssp: 11,
         memo: "哲学495個"
-    },
-    {
-        name: "ヒッポグリフバンダナHQ＋",
-        type: 1,
-        str: 12, vit: 14, acc: 0, crit: 11, det: 11, ssp: 0,
-        memo: "革細工Lv50★★"
     },
     {
         name: "ヒッポグリフバンダナHQ",
@@ -191,7 +185,7 @@ var bodyData =
         name: "アラガンストライカーキュイラス",
         type: 2,
         str: 29, vit: 33, acc: 24, crit: 34, det: 0, ssp: 0,
-        memo: "バハムート5層ドロップ"
+        memo: "バハムート5層"
     },
     {
         name: "ヒッポグリフジャーキンHQ",
@@ -249,7 +243,7 @@ var handData =
         name: "アラガンストライカーガントレット",
         type: 3,
         str: 18, vit: 20, acc: 0, crit: 21, det: 11, ssp: 0,
-        memo: "バハムート2層ドロップ"
+        memo: "バハムート2層"
     },
     {
         name: "ダークライト・ストライカーブレーサー",
@@ -307,19 +301,13 @@ var waistData =
         name: "アラガンストライカータセット",
         type: 4,
         str: 13, vit: 15, acc: 0, crit: 16, det: 8, ssp: 0,
-        memo: "バハムート4層ドロップ"
+        memo: "バハムート4層"
     },
     {
         name: "ダークライト・ウィップベルト",
         type: 4,
         str: 9, vit: 10, acc: 12, crit: 0, det: 6, ssp: 0,
         memo: "哲学375個"
-    },
-    {
-        name: "ヒッポグリフボイジャーベルトHQ＋",
-        type: 4,
-        str: 9, vit: 10, acc: 9, crit: 12, det: 0, ssp: 0,
-        memo: "革細工Lv50★★"
     },
     {
         name: "ヒッポグリフボイジャーベルトHQ",
@@ -359,7 +347,7 @@ var legData =
         name: "アラガンストライカートラウザー",
         type: 5,
         str: 29, vit: 33, acc: 0, crit: 34, det: 0, ssp: 24,
-        memo: "バハムート1層ドロップ"
+        memo: "バハムート1層"
     },
     {
         name: "ダークライトサブリガ",
@@ -426,21 +414,9 @@ var footData =
         memo: "哲学495個"
     },
     {
-        name: "ヒッポグリフサイブーツHQ＋",
-        type: 6,
-        str: 12, vit: 14, acc: 11, crit: 0, det: 11, ssp: 0,
-        memo: "革細工Lv50★★"
-    },
-    {
         name: "ヒッポグリフサイブーツHQ",
         type: 6,
         str: 12, vit: 14, acc: 11, crit: 0, det: 11, ssp: 0,
-        memo: "革細工Lv50★★"
-    },
-    {
-        name: "ヒッポグリフサイブーツ＋",
-        type: 6,
-        str: 11, vit: 11, acc: 9, crit: 0, det: 9, ssp: 0,
         memo: "革細工Lv50★★"
     },
     {
@@ -481,13 +457,13 @@ var neckData =
         name: "アラガンストライカーチョーカー",
         type: 7,
         str: 13, vit: 0, acc: 0, crit: 0, det: 8, ssp: 16,
-        memo: "バハムート4層ドロップ"
+        memo: "バハムート4層"
     },
     {
         name: "アラガンスレイヤーチョーカー",
         type: 7,
         str: 13, vit: 0, acc: 16, crit: 11, det: 0, ssp: 0,
-        memo: "バハムート2層ドロップ"
+        memo: "バハムート2層"
     },
     {
         name: "ヒーローネックレス・オブ・アタック",
@@ -506,12 +482,6 @@ var neckData =
         type: 7,
         str: 9, vit: 0, acc: 12, crit: 9, det: 0, ssp: 0,
         memo: "哲学375個"
-    },
-    {
-        name: "ヒッポグリフチョーカーHQ＋",
-        type: 7,
-        str: 9, vit: 8, acc: 9, crit: 12, det: 8, ssp: 0,
-        memo: "革細工Lv50★★"
     },
     {
         name: "ヒッポグリフチョーカーHQ",
@@ -539,13 +509,13 @@ var earData =
         name: "アラガンストライカーイヤリング",
         type: 8,
         str: 13, vit: 0, acc: 0, crit: 16, det: 0, ssp: 11,
-        memo: "バハムート2層ドロップ"
+        memo: "バハムート2層"
     },
     {
         name: "アラガンスレイヤーイヤリング",
         type: 8,
         str: 13, vit: 0, acc: 16, crit: 0, det: 0, ssp: 11,
-        memo: "バハムート1層ドロップ"
+        memo: "バハムート1層"
     },
     {
         name: "ヒーローイヤリング・オブ・アタック",
@@ -564,12 +534,6 @@ var earData =
         type: 8,
         str: 9, vit: 0, acc: 9, crit: 12, det: 0, ssp: 0,
         memo: "哲学375個"
-    },
-    {
-        name: "ローズゴールド・イヤースクリューHQ＋",
-        type: 8,
-        str: 9, vit: 8, acc: 12, crit: 12, det: 7, ssp: 0,
-        memo: ""
     },
     {
         name: "ローズゴールド・イヤースクリューHQ",
@@ -594,19 +558,103 @@ var earData =
 var wristData =
 [
     {
-        name: "",
+        name: "アラガンストライカーブレスレット",
         type: 9,
-        str: 0, vit: 0, acc: 0, crit: 0, det: 0, ssp: 0,
-        memo: ""
+        str: 13, vit: 0, acc: 0, crit: 11, det: 0, ssp: 16,
+        memo: "バハムート1層"
     },
+    {
+        name: "アラガンスレイヤーブレスレット",
+        type: 9,
+        str: 13, vit: 0, acc: 0, crit: 11, det: 11, ssp: 0,
+        memo: "バハムート5層"
+    },
+    {
+        name: "ヒーローブレスレット・オブ・アタック",
+        type: 9,
+        str: 13, vit: 0, acc: 11, crit: 0, det: 11, ssp: 0,
+        memo: "神話375個"
+    },
+    {
+        name: "ダークライト・スレイヤーブレスレット",
+        type: 9,
+        str: 9, vit: 0, acc: 0, crit: 9, det: 0, ssp: 12,
+        memo: "哲学375個"
+    },
+    {
+        name: "ダークライト・ストライカーブレスレット",
+        type: 9,
+        str: 9, vit: 0, acc: 0, crit: 12, det: 6, ssp: 0,
+        memo: "哲学375個"
+    },
+    {
+        name: "ヒッポグリフリストバンドHQ",
+        type: 9,
+        str: 9, vit: 0, acc: 12, crit: 0, det: 6, ssp: 0,
+        memo: "革細工Lv★★"
+    },
+    {
+        name: "ヒッポグリフリストバンド",
+        type: 9,
+        str: 8, vit: 0, acc: 10, crit: 0, det: 5, ssp: 0,
+        memo: "革細工Lv★★"
+    },
+    {
+        name: "オペレーティブリストレット",
+        type: 9,
+        str: 6, vit: 0, acc: 0, crit: 6, det: 0, ssp: 9,
+        memo: "彫金Lv50★"
+    }
 ];
 
 var ringData =
 [
     {
-        name: "",
+        name: "アラガンストライカーリング",
         type: 10,
-        str: 0, vit: 0, acc: 0, crit: 0, det: 0, ssp: 0,
-        memo: ""
+        str: 13, vit: 0, acc: 16, crit: 0, det: 8, ssp: 0,
+        memo: "バハムート1層"
     },
+    {
+        name: "アラガンスレイヤーリング",
+        type: 10,
+        str: 13, vit: 0, acc: 11, crit: 0, det: 11, ssp: 0,
+        memo: "バハムート4層"
+    },
+    {
+        name: "ヒーローリング・オブ・アタック",
+        type: 10,
+        str: 13, vit: 0, acc: 0, crit: 0, det: 11, ssp: 11,
+        memo: "神話375個"
+    },
+    {
+        name: "ダークライト・スレイヤーリング",
+        type: 10,
+        str: 9, vit: 0, acc: 12, crit: 0, det: 0, ssp: 9,
+        memo: "哲学375個"
+    },
+    {
+        name: "ダークライト・ストライカーリング",
+        type: 10,
+        str: 9, vit: 0, acc: 0, crit: 9, det: 0, ssp: 12,
+        memo: "哲学375個"
+    },
+    {
+        name: "ヒッポグリフリングHQ",
+        type: 10,
+        str: 9, vit: 0, acc: 12, crit: 0, det: 0, ssp: 9,
+        memo: "革細工Lv50★★"
+    },
+    {
+        name: "ヒッポグリフリング",
+        type: 10,
+        str: 8, vit: 0, acc: 10, crit: 0, det: 0, ssp: 7,
+        memo: "革細工Lv50★★"
+    },
+    {
+        name: "ペルタストリング",
+        type: 10,
+        str: 8, vit: 0, acc: 8, crit: 0, det: 0, ssp: 11,
+        memo: "アムダプールドロップ"
+    }
 ];

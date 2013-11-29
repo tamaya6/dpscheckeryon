@@ -17,6 +17,8 @@ dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
     $scope.Foots = footData;
     $scope.Necks = neckData;
     $scope.Ears = earData;
+    $scope.Wrists = wristData;
+    $scope.Rings = ringData;
 
     $scope.getStrTotal = function (item) {
       var r = 0;
