@@ -474,3 +474,139 @@ var footData =
         memo: "革細工Lv50★"
     }
 ];
+
+var neckData =
+[
+    {
+        name: "アラガンストライカーチョーカー",
+        type: 7,
+        str: 13, vit: 0, acc: 0, crit: 0, det: 8, ssp: 16,
+        memo: "バハムート4層ドロップ"
+    },
+    {
+        name: "アラガンスレイヤーチョーカー",
+        type: 7,
+        str: 13, vit: 0, acc: 16, crit: 11, det: 0, ssp: 0,
+        memo: "バハムート2層ドロップ"
+    },
+    {
+        name: "ヒーローネックレス・オブ・アタック",
+        type: 7,
+        str: 13, vit: 0, acc: 11, crit: 16, det: 0, ssp: 0,
+        memo: "神話375個"
+    },
+    {
+        name: "ダークライト・スレイヤーチョーカー",
+        type: 7,
+        str: 9, vit: 0, acc: 9, crit: 0, det: 0, ssp: 12,
+        memo: "哲学375個"
+    },
+    {
+        name: "ダークライト・ストライカーチョーカー",
+        type: 7,
+        str: 9, vit: 0, acc: 12, crit: 9, det: 0, ssp: 0,
+        memo: "哲学375個"
+    },
+    {
+        name: "ヒッポグリフチョーカーHQ＋",
+        type: 7,
+        str: 9, vit: 8, acc: 9, crit: 12, det: 8, ssp: 0,
+        memo: "革細工Lv50★★"
+    },
+    {
+        name: "ヒッポグリフチョーカーHQ",
+        type: 7,
+        str: 9, vit: 0, acc: 9, crit: 0, det: 8, ssp: 0,
+        memo: "革細工Lv50★★"
+    },
+    {
+        name: "ヒッポグリフチョーカー",
+        type: 7,
+        str: 8, vit: 0, acc: 7, crit: 0, det: 7, ssp: 0,
+        memo: "革細工Lv50★★"
+    },
+    {
+        name: "ペルタストチョーカー",
+        type: 7,
+        str: 0, vit: 0, acc: 0, crit: 0, det: 8, ssp: 8,
+        memo: "アムダプールドロップ"
+    }
+];
+
+var earData =
+[
+    {
+        name: "アラガンストライカーイヤリング",
+        type: 8,
+        str: 13, vit: 0, acc: 0, crit: 16, det: 0, ssp: 11,
+        memo: "バハムート2層ドロップ"
+    },
+    {
+        name: "アラガンスレイヤーイヤリング",
+        type: 8,
+        str: 13, vit: 0, acc: 16, crit: 0, det: 0, ssp: 11,
+        memo: "バハムート1層ドロップ"
+    },
+    {
+        name: "ヒーローイヤリング・オブ・アタック",
+        type: 8,
+        str: 13, vit: 0, acc: 16, crit: 0, det: 0, ssp: 11,
+        memo: "神話375個"
+    },
+    {
+        name: "ダークライト・スレイヤーイヤリング",
+        type: 8,
+        str: 9, vit: 0, acc: 12, crit: 9, det: 0, ssp: 0,
+        memo: "哲学375個"
+    },
+    {
+        name: "ダークライト・ストライカーイヤリング",
+        type: 8,
+        str: 9, vit: 0, acc: 9, crit: 12, det: 0, ssp: 0,
+        memo: "哲学375個"
+    },
+    {
+        name: "ローズゴールド・イヤースクリューHQ＋",
+        type: 8,
+        str: 9, vit: 8, acc: 12, crit: 12, det: 7, ssp: 0,
+        memo: ""
+    },
+    {
+        name: "ローズゴールド・イヤースクリューHQ",
+        type: 8,
+        str: 9, vit: 0, acc: 12, crit: 0, det: 6, ssp: 0,
+        memo: ""
+    },
+    {
+        name: "ローズゴールド・イヤースクリュー",
+        type: 8,
+        str: 8, vit: 0, acc: 10, crit: 0, det: 5, ssp: 0,
+        memo: ""
+    },
+    {
+        name: "ペルタストイヤリング",
+        type: 8,
+        str: 8, vit: 0, acc: 0, crit: 0, det: 5, ssp: 11,
+        memo: "アムダプールドロップ"
+    }
+];
+
+var wristData =
+[
+    {
+        name: "",
+        type: 9,
+        str: 0, vit: 0, acc: 0, crit: 0, det: 0, ssp: 0,
+        memo: ""
+    },
+];
+
+var ringData =
+[
+    {
+        name: "",
+        type: 10,
+        str: 0, vit: 0, acc: 0, crit: 0, det: 0, ssp: 0,
+        memo: ""
+    },
+];

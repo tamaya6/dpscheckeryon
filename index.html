@@ -34,11 +34,19 @@
                 <option></option>
             </select>
 
-            <select class="form-control" ng-model="item.leg" ng-options="le.name for le in Legs">
+            <select class="form-control" ng-model="item.leg" ng-options="l.name for l in Legs">
                 <option></option>
             </select>
 
-            <select class="form-control" ng-model="item.foot" ng-options="fo.name for fo in Foots">
+            <select class="form-control" ng-model="item.foot" ng-options="f.name for f in Foots">
+                <option></option>
+            </select>
+
+            <select class="form-control" ng-model="item.neck" ng-options="n.name for n in Necks">
+                <option></option>
+            </select>
+
+            <select class="form-control" ng-model="item.ear" ng-options="e.name for e in Ears">
                 <option></option>
             </select>
 
@@ -137,6 +145,28 @@
                     <td>{{ item.foot.det }}</td>
                     <td>{{ item.foot.ssp }}</td>
                     <td>{{ item.foot.memo }}</td>
+                </tr>
+                <tr>
+                    <th>首</th>
+                    <td>{{ item.neck.name }}</td>
+                    <td>{{ item.neck.str }}</td>
+                    <td>{{ item.neck.vit }}</td>
+                    <td>{{ item.neck.acc }}</td>
+                    <td>{{ item.neck.crit }}</td>
+                    <td>{{ item.neck.det }}</td>
+                    <td>{{ item.neck.ssp }}</td>
+                    <td>{{ item.neck.memo }}</td>
+                </tr>
+                <tr>
+                    <th>足</th>
+                    <td>{{ item.ear.name }}</td>
+                    <td>{{ item.ear.str }}</td>
+                    <td>{{ item.ear.vit }}</td>
+                    <td>{{ item.ear.acc }}</td>
+                    <td>{{ item.ear.crit }}</td>
+                    <td>{{ item.ear.det }}</td>
+                    <td>{{ item.ear.ssp }}</td>
+                    <td>{{ item.ear.memo }}</td>
                 </tr>
             </tbody>
 
