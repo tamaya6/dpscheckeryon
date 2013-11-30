@@ -81,6 +81,16 @@
                 </tr>
             </thead>
             <tbody>
+                <tr class="danger">
+                    <th colspan="2">基本ステータス</th>
+                    <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.str"></td>
+                    <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.vit"></td>
+                    <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.acc"></td>
+                    <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.crit"></td>
+                    <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.det"></td>
+                    <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.ssp"></td>
+                    <td></td>
+                </tr>
                 <tr>
                     <th>武器</th>
                     <td>{{ item.weapon.name }}</td>
@@ -217,13 +227,23 @@
 
             <tfoot>
                 <tr class="warning">
-                    <th colspan="2">加算値</th>
-                    <td>{{ getStrTotal(item) | number }}</td>
-                    <td>{{ getVitTotal(item) | number }}</td>
-                    <td>{{ getAccTotal(item) | number }}</td>
-                    <td>{{ getCritTotal(item) | number }}</td>
-                    <td>{{ getDetTotal(item) | number }}</td>
-                    <td>{{ getSspTotal(item) | number }}</td>
+                    <th colspan="2">装備加算値</th>
+                    <td>{{ getItemTotal(item).str | number }}</td>
+                    <td>{{ getItemTotal(item).vit | number }}</td>
+                    <td>{{ getItemTotal(item).acc | number }}</td>
+                    <td>{{ getItemTotal(item).crit | number }}</td>
+                    <td>{{ getItemTotal(item).det | number }}</td>
+                    <td>{{ getItemTotal(item).ssp | number }}</td>
+                    <td></td>
+                </tr>
+                <tr class="warning">
+                    <th colspan="2">合計値</th>
+                    <td>{{ getAllTotal(baseParameter, getItemTotal(item)).str | number }}</td>
+                    <td>{{ getAllTotal(baseParameter, getItemTotal(item)).vit | number }}</td>
+                    <td>{{ getAllTotal(baseParameter, getItemTotal(item)).acc | number }}</td>
+                    <td>{{ getAllTotal(baseParameter, getItemTotal(item)).crit | number }}</td>
+                    <td>{{ getAllTotal(baseParameter, getItemTotal(item)).det | number }}</td>
+                    <td>{{ getAllTotal(baseParameter, getItemTotal(item)).ssp | number }}</td>
                     <td></td>
                 </tr>
             </tfoot>
@@ -235,15 +255,19 @@
                 <th>物理AA</th>
                 <th>AA間隔※1</th>
                 <th>AA威力</th>
+                <th>クリ率</th>
+                <th>クリ倍率</th>
             </tr>
             <tr>
                 <td>{{ item.weapon.pyhd }}</td>
                 <td>{{ item.weapon.aadam }}</td>
                 <td>{{ item.weapon.aadel }}</td>
-                <td>{{ ( item.weapon.aadam / item.weapon.pyhd) * 100 | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).aaDmg | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).critAve | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).critMag | number }}</td>
             </tr>
         </table>
-        <p></p>
+
     </div>
 </div>
 

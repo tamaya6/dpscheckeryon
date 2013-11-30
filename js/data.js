@@ -18,7 +18,7 @@ var weaponData =
         name: "スファライ",
         type: 0,
         str: 27, vit: 30, acc: 33, crit: 0, det: 0, ssp: 23,
-        pyhd: 44, aadam: 32.80, aadel: 2.72,
+        pyhd: 44, aadam: 39.89, aadel: 2.72,
         memo: "レリック（哲学900個）"
     },
     {
@@ -539,13 +539,13 @@ var earData =
         name: "ローズゴールド・イヤースクリューHQ",
         type: 8,
         str: 9, vit: 0, acc: 12, crit: 0, det: 6, ssp: 0,
-        memo: ""
+        memo: "彫金Lv50★★"
     },
     {
         name: "ローズゴールド・イヤースクリュー",
         type: 8,
         str: 8, vit: 0, acc: 10, crit: 0, det: 5, ssp: 0,
-        memo: ""
+        memo: "彫金Lv50★★"
     },
     {
         name: "ペルタストイヤリング",
