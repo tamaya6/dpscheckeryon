@@ -124,16 +124,16 @@ var weaponData =
 var headData =
 [
     {
-        name: "アラガンストライカーバイザー",
-        type: 1,
-        str: 18, vit: 20, acc: 0, crit: 15, det: 15, ssp: 0,
-        memo: "バハムート4層"
-    },
-    {
         name: "メレーサークレット",
         type: 1,
         str: 18, vit: 20, acc: 15, crit: 21, det: 0, ssp: 0,
         memo: "神話495個"
+    },
+    {
+        name: "アラガンストライカーバイザー",
+        type: 1,
+        str: 18, vit: 20, acc: 0, crit: 15, det: 15, ssp: 0,
+        memo: "バハムート4層"
     },
     {
         name: "ダークライト・ストライカーアイパッチ",

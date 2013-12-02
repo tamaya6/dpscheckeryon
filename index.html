@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.3/angular-cookies.min.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/data.js"></script>
 </head>
@@ -14,53 +15,18 @@
 <div class="row">
     <div class="col-md-4">
         <form>
-            <select class="form-control" ng-model="item.weapon" ng-options="w.name for w in Weapons">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.head" ng-options="h.name for h in Heads">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.body" ng-options="b.name for b in Bodys">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.hand" ng-options="ha.name for ha in Hands">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.waist" ng-options="wa.name for wa in Waists">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.leg" ng-options="l.name for l in Legs">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.foot" ng-options="f.name for f in Foots">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.neck" ng-options="n.name for n in Necks">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.ear" ng-options="e.name for e in Ears">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.wrist" ng-options="wr.name for wr in Wrists">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.ring1" ng-options="r1.name for r1 in Rings">
-                <option></option>
-            </select>
-
-            <select class="form-control" ng-model="item.ring2" ng-options="r2.name for r2 in Rings">
-                <option></option>
-            </select>
+            <select class="form-control" ng-model="item.weapon" ng-options="w.name for w in Weapons"></select>
+            <select class="form-control" ng-model="item.head" ng-options="h.name for h in Heads"></select>
+            <select class="form-control" ng-model="item.body" ng-options="b.name for b in Bodys"></select>
+            <select class="form-control" ng-model="item.hand" ng-options="ha.name for ha in Hands"></select>
+            <select class="form-control" ng-model="item.waist" ng-options="wa.name for wa in Waists"></select>
+            <select class="form-control" ng-model="item.leg" ng-options="l.name for l in Legs"></select>
+            <select class="form-control" ng-model="item.foot" ng-options="f.name for f in Foots"></select>
+            <select class="form-control" ng-model="item.neck" ng-options="n.name for n in Necks"></select>
+            <select class="form-control" ng-model="item.ear" ng-options="e.name for e in Ears"></select>
+            <select class="form-control" ng-model="item.wrist" ng-options="wr.name for wr in Wrists"></select>
+            <select class="form-control" ng-model="item.ring1" ng-options="r1.name for r1 in Rings"></select>
+            <select class="form-control" ng-model="item.ring2" ng-options="r2.name for r2 in Rings"></select>
 
         </form>
     </div>

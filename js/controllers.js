@@ -8,6 +8,7 @@ var dpscheckeryon = angular.module('dpscheckeryon', {
 });
 
 dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
+    $scope.item = [];
     $scope.Weapons = weaponData;
     $scope.Heads = headData;
     $scope.Bodys = bodyData;
@@ -19,6 +20,20 @@ dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
     $scope.Ears = earData;
     $scope.Wrists = wristData;
     $scope.Rings = ringData;
+
+    $scope.item.weapon = $scope.Weapons[0];
+    $scope.item.head = $scope.Heads[0];
+    $scope.item.body = $scope.Bodys[0];
+    $scope.item.hand = $scope.Hands[0];
+    $scope.item.waist = $scope.Waists[0];
+    $scope.item.leg = $scope.Legs[0];
+    $scope.item.foot = $scope.Foots[0];
+    $scope.item.neck = $scope.Necks[0];
+    $scope.item.ear = $scope.Ears[0];
+    $scope.item.wrist = $scope.Wrists[0];
+    $scope.item.ring1 = $scope.Rings[0];
+    $scope.item.ring2 = $scope.Rings[0];
+
 
     // アイテム加算分のparameterのトータル
     $scope.getItemTotal = function (item) {
