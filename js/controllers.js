@@ -58,7 +58,7 @@ dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
         item[k] && (r.ssp += item[k].ssp);
       }
       return r;
-    }
+    };
 
 
     $scope.getAllTotal = function (baseParameter, itemTotal) {
@@ -109,12 +109,12 @@ dpscheckeryon.controller('dpscheckeryonCtrl', function ($scope) {
       r['allDps'] = r['aaDps']+r['wsDps'];
 
       // 基礎DPS
-      r['basicDps'] = ((r['aaDmg']/100)*((b.str*0.0032+0.4162)*i.weapon.pyhd+(b.str*0.1001-0.3529)+(b.det-202)*0.11)*(1+0.5*(b.crit*0.0693-18.486)/100)/r['aaDelay'])+(($scope.wsdmg/100)*((b.str*0.0032+0.4162)*i.weapon.pyhd+(b.str*0.1001-0.3529)+(b.det-202)*0.035)*(1+0.5*(b.crit*0.0693-18.486)/100)/(2.5-$scope.jinrai*0.05))
+      r['basicDps'] = ((r['aaDmg']/100)*((b.str*0.0032+0.4162)*i.weapon.pyhd+(b.str*0.1001-0.3529)+(b.det-202)*0.11)*(1+0.5*(b.crit*0.0693-18.486)/100)/r['aaDelay'])+(($scope.wsdmg/100)*((b.str*0.0032+0.4162)*i.weapon.pyhd+(b.str*0.1001-0.3529)+(b.det-202)*0.035)*(1+0.5*(b.crit*0.0693-18.486)/100)/(2.5-$scope.jinrai*0.05));
 
       //r['base'] = b;
       //r['item'] = i;
       //r['itemTotal'] = it;
       return r;
-    }
+    };
 
 });
