@@ -227,10 +227,49 @@
             <tr>
                 <td>{{ item.weapon.pyhd }}</td>
                 <td>{{ item.weapon.aadam }}</td>
-                <td>{{ item.weapon.aadel }}</td>
+                <td>{{ getCalcAll(baseParameter, item).aaDelay | number }}</td>
                 <td>{{ getCalcAll(baseParameter, item).aaDmg | number }}</td>
                 <td>{{ getCalcAll(baseParameter, item).critAve | number }}</td>
                 <td>{{ getCalcAll(baseParameter, item).critMag | number }}</td>
+            </tr>
+        </table>
+
+        <table class="table table-striped table-bordered table-condensed">
+            <tr>
+                <th>AA平均ダメ</th>
+                <th>WS平均ダメ</th>
+                <th>WS威力</th>
+                <th>GCD</th>
+                <th>疾風迅雷</th>
+            </tr>
+            <tr>
+                <td>{{ getCalcAll(baseParameter, item).aaAveDmg | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).wsAveDmg | number }}</td>
+                <td><input type="number" style="width: 60px;" maxlength="5" ng-model="wsdmg"></td>
+                <td>{{ getCalcAll(baseParameter, item).gcd | number }}</td>
+                <td>
+                    <select class="form-control input-sm" ng-model="jinrai">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table table-striped table-bordered table-condensed">
+            <tr>
+                <th>AA DPS</th>
+                <th>WS DPS</th>
+                <th>総DPS</th>
+                <th>基礎DPS</th>
+            </tr>
+            <tr>
+                <td>{{ getCalcAll(baseParameter, item).aaDps | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).wsDps | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).allDps | number }}</td>
+                <td>{{ getCalcAll(baseParameter, item).basicDps | number }}</td>
             </tr>
         </table>
 
