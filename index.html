@@ -1,8 +1,8 @@
 <!doctype html>
 <html ng-app="dpscheckeryon">
 <head>
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
     <script src="http://code.angularjs.org/1.2.3/angular-cookies.min.js"></script>
     <script src="js/controllers.js"></script>
@@ -10,28 +10,11 @@
 </head>
 <body ng-controller="dpscheckeryonCtrl">
 
-<h1>title</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <form>
-            <select class="form-control" ng-model="item.weapon" ng-options="w.name for w in Weapons"></select>
-            <select class="form-control" ng-model="item.head" ng-options="h.name for h in Heads"></select>
-            <select class="form-control" ng-model="item.body" ng-options="b.name for b in Bodys"></select>
-            <select class="form-control" ng-model="item.hand" ng-options="ha.name for ha in Hands"></select>
-            <select class="form-control" ng-model="item.waist" ng-options="wa.name for wa in Waists"></select>
-            <select class="form-control" ng-model="item.leg" ng-options="l.name for l in Legs"></select>
-            <select class="form-control" ng-model="item.foot" ng-options="f.name for f in Foots"></select>
-            <select class="form-control" ng-model="item.neck" ng-options="n.name for n in Necks"></select>
-            <select class="form-control" ng-model="item.ear" ng-options="e.name for e in Ears"></select>
-            <select class="form-control" ng-model="item.wrist" ng-options="wr.name for wr in Wrists"></select>
-            <select class="form-control" ng-model="item.ring1" ng-options="r1.name for r1 in Rings"></select>
-            <select class="form-control" ng-model="item.ring2" ng-options="r2.name for r2 in Rings"></select>
 
-        </form>
-    </div>
-
-    <div class="col-md-8">
+<div class="container">
+    <h1>DPSチェッカーよん？ver.1.0 <small>web版</small></h1>
+    <p>via. <a href="https://docs.zoho.com/sheet/published.do?rid=gu1wadbc038dc9577433d9f32630bb77f7a1f">https://docs.zoho.com/sheet/published.do?rid=gu1wadbc038dc9577433d9f32630bb77f7a1f</a></p>
         <table class="table table-striped table-bordered table-condensed">
             <thead>
                 <tr>
@@ -48,7 +31,7 @@
             </thead>
             <tbody>
                 <tr class="danger">
-                    <th colspan="2">基本ステータス</th>
+                    <th colspan="2" class="text-center">基本ステータス</th>
                     <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.str"></td>
                     <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.vit"></td>
                     <td><input type="number" style="width: 40px;" maxlength="3" ng-model="baseParameter.acc"></td>
@@ -59,7 +42,7 @@
                 </tr>
                 <tr>
                     <th>武器</th>
-                    <td>{{ item.weapon.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.weapon" ng-options="w.name for w in Weapons"></select></td>
                     <td>{{ item.weapon.str }}</td>
                     <td>{{ item.weapon.vit }}</td>
                     <td>{{ item.weapon.acc }}</td>
@@ -70,7 +53,7 @@
                 </tr>
                 <tr>
                     <th>頭</th>
-                    <td>{{ item.head.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.head" ng-options="h.name for h in Heads"></select></td>
                     <td>{{ item.head.str }}</td>
                     <td>{{ item.head.vit }}</td>
                     <td>{{ item.head.acc }}</td>
@@ -81,7 +64,7 @@
                 </tr>
                 <tr>
                     <th>胴</th>
-                    <td>{{ item.body.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.body" ng-options="b.name for b in Bodys"></select></td>
                     <td>{{ item.body.str }}</td>
                     <td>{{ item.body.vit }}</td>
                     <td>{{ item.body.acc }}</td>
@@ -92,7 +75,7 @@
                 </tr>
                 <tr>
                     <th>手</th>
-                    <td>{{ item.hand.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.hand" ng-options="ha.name for ha in Hands"></select></td>
                     <td>{{ item.hand.str }}</td>
                     <td>{{ item.hand.vit }}</td>
                     <td>{{ item.hand.acc }}</td>
@@ -103,7 +86,7 @@
                 </tr>
                 <tr>
                     <th>帯</th>
-                    <td>{{ item.waist.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.waist" ng-options="wa.name for wa in Waists"></select></td>
                     <td>{{ item.waist.str }}</td>
                     <td>{{ item.waist.vit }}</td>
                     <td>{{ item.waist.acc }}</td>
@@ -114,7 +97,7 @@
                 </tr>
                 <tr>
                     <th>脚</th>
-                    <td>{{ item.leg.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.leg" ng-options="l.name for l in Legs"></select></td>
                     <td>{{ item.leg.str }}</td>
                     <td>{{ item.leg.vit }}</td>
                     <td>{{ item.leg.acc }}</td>
@@ -125,7 +108,7 @@
                 </tr>
                 <tr>
                     <th>足</th>
-                    <td>{{ item.foot.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.foot" ng-options="f.name for f in Foots"></select></td>
                     <td>{{ item.foot.str }}</td>
                     <td>{{ item.foot.vit }}</td>
                     <td>{{ item.foot.acc }}</td>
@@ -136,7 +119,7 @@
                 </tr>
                 <tr>
                     <th>首</th>
-                    <td>{{ item.neck.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.neck" ng-options="n.name for n in Necks"></select></td>
                     <td>{{ item.neck.str }}</td>
                     <td>{{ item.neck.vit }}</td>
                     <td>{{ item.neck.acc }}</td>
@@ -147,7 +130,7 @@
                 </tr>
                 <tr>
                     <th>耳</th>
-                    <td>{{ item.ear.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.ear" ng-options="e.name for e in Ears"></select></td>
                     <td>{{ item.ear.str }}</td>
                     <td>{{ item.ear.vit }}</td>
                     <td>{{ item.ear.acc }}</td>
@@ -158,7 +141,7 @@
                 </tr>
                 <tr>
                     <th>腕</th>
-                    <td>{{ item.wrist.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.wrist" ng-options="wr.name for wr in Wrists"></select></td>
                     <td>{{ item.wrist.str }}</td>
                     <td>{{ item.wrist.vit }}</td>
                     <td>{{ item.wrist.acc }}</td>
@@ -169,7 +152,7 @@
                 </tr>
                 <tr>
                     <th>指1</th>
-                    <td>{{ item.ring1.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.ring1" ng-options="r1.name for r1 in Rings"></select></td>
                     <td>{{ item.ring1.str }}</td>
                     <td>{{ item.ring1.vit }}</td>
                     <td>{{ item.ring1.acc }}</td>
@@ -180,7 +163,7 @@
                 </tr>
                 <tr>
                     <th>指2</th>
-                    <td>{{ item.ring2.name }}</td>
+                    <td><select class="form-control input-sm" ng-model="item.ring2" ng-options="r2.name for r2 in Rings"></select></td>
                     <td>{{ item.ring2.str }}</td>
                     <td>{{ item.ring2.vit }}</td>
                     <td>{{ item.ring2.acc }}</td>
@@ -193,7 +176,7 @@
 
             <tfoot>
                 <tr class="warning">
-                    <th colspan="2">装備加算値</th>
+                    <th colspan="2" class="text-center">装備加算値</th>
                     <td>{{ getItemTotal(item).str | number }}</td>
                     <td>{{ getItemTotal(item).vit | number }}</td>
                     <td>{{ getItemTotal(item).acc | number }}</td>
@@ -203,7 +186,7 @@
                     <td></td>
                 </tr>
                 <tr class="warning">
-                    <th colspan="2">合計値</th>
+                    <th colspan="2" class="text-center">合計値</th>
                     <td>{{ getAllTotal(baseParameter, getItemTotal(item)).str | number }}</td>
                     <td>{{ getAllTotal(baseParameter, getItemTotal(item)).vit | number }}</td>
                     <td>{{ getAllTotal(baseParameter, getItemTotal(item)).acc | number }}</td>
@@ -219,8 +202,8 @@
             <tr>
                 <th>物理基本性能</th>
                 <th>物理AA</th>
-                <th>AA間隔※1</th>
-                <th>AA威力</th>
+                <th>AA間隔</th>
+                <th>AA威力※1</th>
                 <th>クリ率</th>
                 <th>クリ倍率</th>
             </tr>
@@ -238,7 +221,7 @@
             <tr>
                 <th>AA平均ダメ</th>
                 <th>WS平均ダメ</th>
-                <th>WS威力</th>
+                <th>WS威力※2</th>
                 <th>GCD</th>
                 <th>疾風迅雷</th>
             </tr>
@@ -273,7 +256,9 @@
             </tr>
         </table>
 
-    </div>
+    <p>※1 武器固有ではなく迅雷適用値</p>
+    <p>※2 崩拳</p>
+
 </div>
 
 </body>
